@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="catalogue">
+        <div class="fixed-header">
+            <div class="row icons-row">
+        <div class="col">
+            <div class="search-row d-flex align-items-center">
+                <input type="text" class="carousel-button bubbly-button" placeholder="Поиск">
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col ps-4 pe-4 d-flex align-items-center theme-toggle-container" style="margin-right: 10px">
+            <i class="fa fa-home" aria-hidden="true" id="showAll"></i>
+            <i class="fa fa-filter" aria-hidden="true" id="showFilters"></i>
+            <i class="fa fa-moon-o theme-toggle" aria-hidden="true" id="theme-toggle"></i>
+        </div>
+      </div>
+            <div class="filter-menu" id="filterMenu">
+      <div>
+        <select class="comboBox" id="categoryFilter">
+          <option value="">Категория</option>
+          <option value="верхняя_одежда">Верхняя одежда</option>
+          <option value="обувь">Обувь</option>
+          <option value="аксессуары">Аксессуары</option>
+        </select>
+      </div>
+      <div>
+        <select class="comboBox" id="genderFilter">
+          <option value="">Пол</option>
+          <option value="мужское">Мужское</option>
+          <option value="женское">Женское</option>
+        </select>
+      </div>
+      <div>
+        <select class="comboBox" id="seasonFilter">
+          <option value="">Сезон</option>
+          <option value="зима">Зима</option>
+          <option value="осень">Осень</option>
+          <option value="лето">Лето</option>
+          <option value="весна">Весна</option>
+        </select>
+      </div>
+    </div>
+        </div>
+        <div class="container">
+            <div class="row mt-2" id="productList">
+            <!-- Товары будут добавлены здесь с использованием JavaScript -->
+            </div>
+        </div>
+    </section>
+      <div class="fixed-footer">
+      </div>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
