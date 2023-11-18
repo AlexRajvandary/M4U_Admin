@@ -167,6 +167,62 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
+    var previousSelectedBtn = document.getElementById('home-section-btn');
+    var previousSection = document.getElementById('home-section');
+    var section;
+
+    function onPageBtnClicked(btn){
+        selectedStyle(btn);
+
+        if(previousSelectedBtn != null || previousSelectedBtn !== undefined){
+            unselectedStyle(previousSelectedBtn)
+        }
+
+        previousSelectedBtn = btn;
+
+        switch (btn.id) {
+            case 'home-section-btn':
+                section = document.getElementById('home-section');
+                section.style.display = 'block';
+                previousSection.style.display = 'none';
+                previousSection = section;
+                break;
+            case 'edit-section-btn':
+                section = document.getElementById('edit-section');
+                section.style.display = 'block';
+                previousSection.style.display = 'none';
+                previousSection = section;
+                break;
+            case 'orders-section-btn':
+                section = document.getElementById('orders-section');
+                section.style.display = 'block';
+                previousSection.style.display = 'none';
+                previousSection = section;
+                break;
+            case 'stat-section-btn':
+                section = document.getElementById('stat-section');
+                section.style.display = 'block';
+                previousSection.style.display = 'none';
+                previousSection = section;
+                break;
+            case 'settings-section-btn':
+                section = document.getElementById('settings-section');
+                section.style.display = 'block';
+                previousSection.style.display = 'none';
+                previousSection = section;
+                break;
+            default:
+        }
+    }
+
+    function selectedStyle(btn){
+        btn.classList.add('active');
+    }
+
+    function unselectedStyle(btn){
+        btn.classList.remove('active');
+    }
+
     function mainBtnClicked(){
 
     }
