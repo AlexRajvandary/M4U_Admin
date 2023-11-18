@@ -454,6 +454,7 @@ body.native-theme .add-to-cart-button {
     padding: 12px 0; /* Some top and bottom padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
+    background: #0f0f0f;
     font-size: 20px; /* Increased font size */
 }
 
