@@ -442,14 +442,29 @@ body.native-theme .add-to-cart-button {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+/* Скрыть ползунок скролла для всех браузеров */
+.table-wrapper {
+    scrollbar-width: thin; /* для Firefox */
+    -ms-overflow-style: none; /* для Internet Explorer и Edge */
+}
+
+/* Скрыть ползунок скролла для WebKit браузеров (Chrome, Safari) */
+.table-wrapper::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
  .table {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 0;
             background-color: #0f0f0f;
-            border-radius: 10px;
+
             overflow: hidden;
             border-collapse: collapse; /* Добавлено свойство */
             border-spacing: 0; /* Добавлено свойство */
