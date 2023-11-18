@@ -441,32 +441,31 @@ body.native-theme .add-to-cart-button {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.table {
-
+    border-radius: 10px;
 }
 
  table {
             width: 100%;
-            border-collapse: collapse;
+
             margin-top: 20px;
-            color: white;
-            background-color: #333;
+
+            background-color: #212121;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+            border-collapse: collapse; /* Добавлено свойство */
+            border-spacing: 0; /* Добавлено свойство */
         }
 
         th, td {
             padding: 16px;
             text-align: left;
-            border-bottom: 1px solid #555; /* Измените цвет границы на ваш темный цвет */
-            color: #fff; /* Замените цвет текста на ваш светлый цвет */
+            color: #ffffff; /* Замените цвет текста на ваш светлый цвет */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            min-width: 100px;
         }
 
         th {
-            background-color: #444; /* Замените цвет фона заголовка на ваш темный цвет */
+            background-color: #212121; /* Замените цвет фона заголовка на ваш темный цвет */
             font-weight: bold;
             text-transform: uppercase;
             font-size: 12px;
@@ -543,10 +542,8 @@ body.native-theme .add-to-cart-button {
         .options {
             position: absolute;
             top: 100%;
-
             right: 0;
             display: none;
-            border: 1px solid #ccc;
             border-top: none;
             border-radius: 0 0 4px 4px;
             background-color: #212121;
