@@ -95,7 +95,7 @@ body.native-theme .add-to-cart-button {
 }
 
 .container{
-    padding-top: 50px;
+    padding-top: 75px;
 }
 
 .product-card img {
@@ -438,6 +438,8 @@ body.native-theme .add-to-cart-button {
 
 .table-wrapper {
     overflow-x: auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .table {
