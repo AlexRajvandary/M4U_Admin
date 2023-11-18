@@ -1,6 +1,7 @@
 body {
     color: black; /* Цвет текста по умолчанию */
     background-color: white; /* Фон по умолчанию */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .card-text,
@@ -423,7 +424,7 @@ body.native-theme .add-to-cart-button {
 .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;
-        background-color: #212121;
+        background-color: #0f0f0f;
         z-index: 1000;
 }
 
@@ -444,16 +445,15 @@ body.native-theme .add-to-cart-button {
     border-radius: 10px;
 }
 
- table {
+ .table {
             width: 100%;
-
             margin-top: 20px;
-
-            background-color: #212121;
+            background-color: #0f0f0f;
             border-radius: 10px;
             overflow: hidden;
             border-collapse: collapse; /* Добавлено свойство */
             border-spacing: 0; /* Добавлено свойство */
+            margin-bottom: 0;
         }
 
         th, td {
@@ -462,10 +462,13 @@ body.native-theme .add-to-cart-button {
             color: #ffffff; /* Замените цвет текста на ваш светлый цвет */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             min-width: 100px;
+
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
         }
 
         th {
-            background-color: #212121; /* Замените цвет фона заголовка на ваш темный цвет */
             font-weight: bold;
             text-transform: uppercase;
             font-size: 12px;
@@ -517,7 +520,9 @@ body.native-theme .add-to-cart-button {
      .custom-select {
             position: relative;
             display: inline-block;
-            background: transparent;
+            background: #0f0f0f ;
+            border:none;
+            border-bottom: 0.1px solid white;
         }
 
         .select-wrapper {
@@ -545,10 +550,14 @@ body.native-theme .add-to-cart-button {
             right: 0;
             display: none;
             border-top: none;
-            border-radius: 0 0 4px 4px;
+            border-radius: 10px;
             background-color: #212121;
             color: white;
             width: fit-content;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .options.show {
@@ -560,10 +569,6 @@ body.native-theme .add-to-cart-button {
             cursor: pointer;
             display: flex;
             align-items: center;
-        }
-
-        .option:hover {
-            background-color: #444444;
         }
 
          .checkbox {
