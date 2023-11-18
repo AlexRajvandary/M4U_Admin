@@ -1,9 +1,6 @@
 let mainBtn = window.Telegram.WebApp.MainButton;
 let backBtn = window.Telegram.WebApp.BackButton;
-let popup = window.Telegram.WebApp.PopupParams;
 let webApp = window.Telegram.WebApp;
-
-popup.title = 'something';
 
 class Product {
     constructor(id,
