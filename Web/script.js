@@ -231,4 +231,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }
 
+      function toggleOptions() {
+            var options = document.getElementById('options');
+            options.classList.toggle('show');
+        }
+
+        function toggleOption(value) {
+            var checkbox = document.getElementById(value + 'Checkbox');
+            var originalSelect = document.getElementById('originalSelect');
+            var optionToToggle = Array.from(originalSelect.options).find(option => option.value === value);
+
+            if (optionToToggle) {
+                optionToToggle.selected = checkbox.checked;
+                updateSelectedOptions();
+            }
+        }
+
+        function updateSelectedOptions() {
+            var selectedOptionsContainer = document.getElementById('selectedOptions');
+            selectedOptionsContainer.innerHTML = '';
+
+            var selectedOptions = Array.from(document.getElementById('originalSelect').selectedOptions);
+
+            selectedOptions.forEach(function(option) {
+                var optionElement = document.createElement('div');
+                optionElement.className = 'selected-option';
+                optionElement.innerHTML = option.label + '<span class="remove-option" onclick="removeOption(\'' + option.value + '\')">x</span>';
+                selectedOptionsContainer.appendChild(optionElement);
+            });
+        }
+
+        function removeOption(value) {
+            var originalSelect = document.getElementById('originalSelect');
+            var optionToRemove = Array.from(originalSelect.options).find(option => option.value === value);
+
+            if (optionToRemove) {
+                optionToRemove.selected = false;
+                updateSelectedOptions();
+            }
+        }
+
     displayProducts();

@@ -64,9 +64,79 @@
         </div>
     </section>
 
-    <section class="db container" id="edit-section" style="display: none">
+   <section class="db" id="edit-section" style="display: none">
         <div class="fixed-header">
-
+            <div class="custom-select" id="customSelect">
+                <div class="select-wrapper">
+                    <div class="selected-options" id="selectedOptions"></div>
+                    <div class="arrow-down" onclick="toggleOptions()"></div>
+                </div>
+                <div class="options" id="options">
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="categoryCheckbox" onchange="toggleOption('Category')">
+                            <span class="checkmark"></span>
+                            Category
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="subCategoryCheckbox" onchange="toggleOption('SubCategory')">
+                            <span class="checkmark"></span>
+                            SubCategory
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="genderCheckbox" onchange="toggleOption('Gender')">
+                            <span class="checkmark"></span>
+                            Gender
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="seasonCheckbox" onchange="toggleOption('Season')">
+                            <span class="checkmark"></span>
+                            Season
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="descriptionCheckbox" onchange="toggleOption('Description')">
+                            <span class="checkmark"></span>
+                            Description
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="sizesCheckbox" onchange="toggleOption('Sizes')">
+                                <span class="checkmark"></span>
+                                Sizes
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="colorsCheckbox" onchange="toggleOption('Colors')">
+                            <span class="checkmark"></span>
+                            Colors
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="photosCheckbox" onchange="toggleOption('Photos')">
+                            <span class="checkmark"></span>
+                            Photos
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" id="priceCheckbox" onchange="toggleOption('Price')">
+                                <span class="checkmark"></span>
+                                Price
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="table-wrapper">
             <table class="table table-bordered">
