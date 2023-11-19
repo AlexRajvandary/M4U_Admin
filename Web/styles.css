@@ -424,7 +424,7 @@ body.native-theme .add-to-cart-button {
 .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;
-        background-color: #0f0f0f;
+        background-color: rgba(15, 15, 15, 0.91);
         z-index: 1000;
 }
 
@@ -463,7 +463,7 @@ body.native-theme .add-to-cart-button {
  .table {
             width: 100%;
             margin-top: 0;
-            background-color: #0f0f0f;
+            background-color: rgba(15, 15, 15, 0.79);
 
             overflow: hidden;
             border-collapse: collapse; /* Добавлено свойство */
@@ -535,7 +535,7 @@ body.native-theme .add-to-cart-button {
      .custom-select {
             position: relative;
             display: inline-block;
-            background: #0f0f0f ;
+            background: rgba(15, 15, 15, 0.91);
             border:none;
             border-bottom: 0.1px solid white;
         }
@@ -545,7 +545,6 @@ body.native-theme .add-to-cart-button {
             align-items: center;
             justify-content: space-between;
             padding: 5px;
-            border-radius: 4px;
             position: relative;
             cursor: pointer;
         }
