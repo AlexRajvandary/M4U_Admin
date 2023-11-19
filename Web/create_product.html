@@ -21,43 +21,66 @@
     </div>
 
     <div class="create-product-row">
-      <label for="brand">Brand:</label>
-      <input type="text" id="brand" name="brand" class="create-product-input" required>
+      <label>Brand:</label>
+      <select>
+        <option>Adidas</option>
+        <option>Nike</option>
+        <option>Stone Island</option>
+      </select>
     </div>
 
     <div class="create-product-row">
-      <label for="category">Category:</label>
-      <input type="text" id="category" name="category" class="create-product-input" required>
+      <label>Category:</label>
+      <select>
+        <option>Одежда</option>
+        <option>Обувь</option>
+        <option>Аксессуары</option>
+      </select>
+      <select>
+        <option>Пуховики</option>
+        <option>Куртки</option>
+      </select>
+      <select>
+        <option>Для него</option>
+        <option>Для неё</option>
+        <option>Для всех</option>
+      </select>
     </div>
 
     <div class="create-product-row">
-      <label for="subCategory">SubCategory:</label>
-      <input type="text" id="subCategory" name="subCategory" class="create-product-input" required>
-    </div>
-
-    <div class="create-product-row">
-      <label for="gender">Gender:</label>
-      <input type="text" id="gender" name="gender" class="create-product-input" required>
-    </div>
-
-    <div class="create-product-row">
-      <label for="season">Season:</label>
-      <input type="text" id="season" name="season" class="create-product-input" required>
+      <label>Сезон:</label>
+      <select>
+        <option>Зима</option>
+        <option>Весна</option>
+        <option>Лето</option>
+        <option>Осень</option>
+      </select>
     </div>
 
     <div class="create-product-row">
       <label for="description">Description:</label>
-      <textarea id="description" name="description" rows="4" class="create-product-input create-product-textarea" required></textarea>
+      <textarea id="description" name="description" rows="2" class="create-product-input create-product-textarea" required></textarea>
     </div>
 
     <div class="create-product-row">
-      <label for="sizes">Sizes:</label>
-      <input type="text" id="sizes" name="sizes" class="create-product-input" required>
+      <label>Размеры:</label>
+       <select>
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+         <option>XL</option>
+         <option>39</option>
+         <option>40</option>
+      </select>
     </div>
 
     <div class="create-product-row">
-      <label for="colors">Colors:</label>
-      <input type="text" id="colors" name="colors" class="create-product-input" required>
+      <label>Цвета:</label>
+      <select>
+        <option>Чёрный</option>
+        <option>Белый</option>
+      </select>
     </div>
 
     <div class="create-product-row">
@@ -68,6 +91,12 @@
     <div class="create-product-row">
       <label for="price">Price:</label>
       <input type="number" id="price" name="price" class="create-product-input" required>
+      <select>
+        <option>£</option>
+        <option>$</option>
+        <option>₽</option>
+        <option>€</option>
+      </select>
     </div>
 
     <button type="submit" class="create-product-button">Create Product</button>
