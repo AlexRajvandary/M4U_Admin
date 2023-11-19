@@ -140,16 +140,19 @@
         </div>
         <div class="container">
             <div class="table-wrapper">
-            <table class="table">
+            <table class="table" id="products-table">
                 <thead>
                     <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Name and Brand</th>
-                        <th scope="col">Category SubCategory</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">SubCategory</th>
                         <th scope="col">Gender</th>
                         <th scope="col">Season</th>
                         <th scope="col">Description</th>
-                        <th scope="col">Sizes and Colors</th>
+                        <th scope="col">Sizes</th>
+                        <th scope="col">Colors</th>
                         <th scope="col">Photos</th>
                         <th scope="col">Price</th>
                     </tr>
@@ -165,6 +168,9 @@
                         <td>$19.99</td>
                         <td>Product 1</td>
                         <td>$19.99</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
                     </tr>
                      <tr>
                         <td>1</td>
@@ -176,10 +182,14 @@
                         <td>$19.99</td>
                         <td>Product 1</td>
                         <td>$19.99</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+             <button class="round-button" onclick="openCreateProductPage()">+</button>
         </div>
 
     </section>
@@ -209,5 +219,10 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="script.js"></script>
   <script src="animations.js"></script>
+ <script>
+    function openCreateProductPage() {
+      window.location.href = 'create_product.html'; // Перенаправление на страницу создания продукта
+    }
+  </script>
 </body>
 </html>

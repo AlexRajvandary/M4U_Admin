@@ -1,0 +1,46 @@
+/* create_product.css */
+
+.create-product-form {
+  display: grid;
+
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid white; /* Цвет границы формы */
+  border-radius: 10px;
+}
+
+.create-product-row {
+  display: flex;
+  align-items: center;
+}
+
+.create-product-row label {
+  margin-right: 10px;
+  align-self: flex-start; /* Выравнивание label к верху */
+}
+
+.create-product-input {
+    width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.create-product-textarea {
+  min-height: 100px; /* Минимальная высота textarea */
+  resize: vertical; /* Разрешение вертикального изменения размера */
+}
+
+.create-product-button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
