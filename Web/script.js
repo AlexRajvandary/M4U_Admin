@@ -48,7 +48,7 @@ const products = [
     new Product(14, "Футболки хайповые", "верхняя_одежда", "мужское", "весна", "tshirt/7.jpg", 7990, "Описание товара 14", sizes, colors)
 ];
 
-webApp.setHeaderColor('#0f0f0f');
+webApp.setHeaderColor('#303030ff');
 mainBtn.text_color = '#FFFFFF';
 mainBtn.color = '#3953f8';
 mainBtn.text = 'Перейти в корзину';
