@@ -84,8 +84,14 @@
     </div>
 
     <div class="create-product-row">
-      <label for="photos">Изображения:</label>
-      <input type="image" id="photos" name="photos" class="create-product-input" required>
+      <label>Изображения:</label>
+      <input type="file" accept="image/*">
+    </div>
+
+    <div class="create-product-row" id="image-upload-container">
+      <label for="image-upload-input" id="image-upload-label">Загрузить изображения</label>
+      <input type="file" id="image-upload-input" accept="image/*">
+      <img src="" alt="Uploaded Image" id="uploaded-image">
     </div>
 
     <div class="create-product-row">
