@@ -395,6 +395,53 @@ body.native-theme .add-to-cart-button {
     overflow: auto;
 }
 
+.edit-controls-footer {
+  width: 100%;
+  position: fixed;
+  background-color: transparent; /* Прозрачный фон */
+  z-index: 1000;
+  bottom: 60px;
+}
+
+.edit-controls-footer a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px;
+}
+
+.edit-controls-footer i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%; /* Круглый элемент */
+}
+
+.create-product-btn{
+    transition: all 0.3s ease;
+  color: white;
+  background-color: #27ae60;
+}
+
+.create-product-btn:hover {
+  background-color: #218f52;
+}
+
+.edit-product-btn{
+  transition: all 0.3s ease;
+  color: white;
+  background-color: #ef6d1b;
+}
+
+.delete-product-btn{
+  transition: all 0.3s ease;
+  color: white;
+  background-color: #ee0808;
+}
+
 .table-wrapper {
     overflow-x: auto;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -603,15 +650,12 @@ body.native-theme .add-to-cart-button {
         }
 
         .round-button {
-  position: absolute;
-  bottom: 70px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #27ae60; /* цвет фона кнопки */
-  color: #fff; /* цвет текста */
-  font-size: 25px;
-  border: none;
-  cursor: pointer;
-}
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #27ae60; /* цвет фона кнопки */
+            color: #fff; /* цвет текста */
+            font-size: 25px;
+            border: none;
+            cursor: pointer;
+        }

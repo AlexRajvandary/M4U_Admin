@@ -140,7 +140,7 @@
         </div>
         <div class="container">
             <div class="table-wrapper">
-            <table class="table" id="products-table">
+                <table class="table" id="products-table">
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
@@ -188,10 +188,15 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
-             <button class="round-button" onclick="openCreateProductPage()">+</button>
+        <div class="edit-controls-footer">
+            <a id="create-product-btn" onclick="openCreateProductPage()"><i class="fa fa-plus create-product-btn"></i></a>
+            <a></a>
+            <a id="edit-product-btn" onclick="openCreateProductPage()"><i class="fa fa-pencil edit-product-btn"></i></a>
+            <a></a>
+            <a id="delete-product-btn" onclick="openCreateProductPage()"><i class="fa fa-times delete-product-btn"></i></a>
         </div>
-
     </section>
 
      <section class="db container" id="orders-section" style="display: none">
