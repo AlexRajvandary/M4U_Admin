@@ -424,7 +424,7 @@ body.native-theme .add-to-cart-button {
 .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;
-        background-color: rgba(15, 15, 15, 0.91);
+        background-color: rgba(15, 15, 15, 0.7);
         z-index: 1000;
 }
 
@@ -535,7 +535,7 @@ body.native-theme .add-to-cart-button {
      .custom-select {
             position: relative;
             display: inline-block;
-            background: rgba(15, 15, 15, 0.91);
+            background: rgba(15, 15, 15, 0.7);
             border:none;
             border-bottom: 0.1px solid white;
         }
