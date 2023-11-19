@@ -111,12 +111,20 @@
     </div>
 
     <div class="create-product-controls-footer">
-        <a id="create-product-btn" onclick="openCreateProductPage()"><i class="fa fa-chevron-left create-product-btn"></i></a>
+        <a id="create-product-btn" onclick="goBack()"><i class="fa fa-chevron-left create-product-btn"></i></a>
         <a></a>
         <a></a>
         <a></a>
         <a id="save-btn" onclick="onPageBtnClicked(this)"><i class="fa fa-floppy-o save-btn"></i></a>
     </div>
+    <script>
+        function goBack() {
+           var confirmLeave = confirm("Вы уверены, что хотите покинуть страницу? Все изменения будут потеряны.");
 
+            if (confirmLeave) {
+                window.history.back();
+            }
+        }
+    </script>
 </body>
 </html>
