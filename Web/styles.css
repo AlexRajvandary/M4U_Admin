@@ -288,7 +288,7 @@ body.native-theme .add-to-cart-button {
 .comboBox-cartItem:focus,
 .comboBox-cartItem:active{
     background-color: transparent;
-    color: #31b545;
+    color: var(--green);
 }
 
 .comboBox-highlighted {
@@ -423,7 +423,7 @@ body.native-theme .add-to-cart-button {
 .create-product-btn{
     transition: all 0.3s ease;
   color: white;
-  background-color: #27ae60;
+  background-color: var(--green);
 }
 
 .create-product-btn:hover {
@@ -620,7 +620,7 @@ body.native-theme .add-to-cart-button {
         top: 3px;
         width: 5px;
         height: 10px;
-        border: solid #31b545;
+        border: solid var(--green);
         border-width: 0 3px 3px 0;
         transform: rotate(45deg);
     }
@@ -653,7 +653,7 @@ body.native-theme .add-to-cart-button {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: #27ae60; /* цвет фона кнопки */
+            background-color: var(--green); /* цвет фона кнопки */
             color: #fff; /* цвет текста */
             font-size: 25px;
             border: none;

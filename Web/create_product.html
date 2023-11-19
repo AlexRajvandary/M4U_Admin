@@ -7,92 +7,94 @@
   <title>Create New Product</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="create_product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="dark-theme">
-  <div class="create-product-form">
-    <div class="create-product-row">
+    <div class="image-container" style="display: flex">
+        <div  style="flex: 1;">
+            <img src="sneakers/1.jpg" class="card-img-top" alt="${product.name}">
+        </div>
+        <div style="flex: 1;" id="image-upload-container">
+            <label for="image-upload-input" class="create-product-button" id="image-upload-label">Загрузить</label>
+            <input type="file" id="image-upload-input" accept="image/*">
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+         <div class="create-product-container">
+             <div class="create-product-form">
+                <div class="create-product-row">
       <label for="id">Артикул:</label>
       <input type="text" id="id" name="id" class="create-product-input" required>
     </div>
 
-    <div class="create-product-row">
-      <label for="name">Имя:</label>
-      <input type="text" id="name" name="name" class="create-product-input" required>
-    </div>
+                <div class="create-product-row">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" class="create-product-input" required>
+                </div>
 
-    <div class="create-product-row">
-      <label>Бренд:</label>
-      <select>
-        <option>Adidas</option>
-        <option>Nike</option>
-        <option>Stone Island</option>
-      </select>
-    </div>
+                <div class="create-product-row">
+                    <label>Бренд:</label>
+                    <select>
+                        <option>Adidas</option>
+                        <option>Nike</option>
+                        <option>Stone Island</option>
+                    </select>
+                </div>
 
-    <div class="create-product-row">
-      <label>Категория:</label>
-      <select>
-        <option>Одежда</option>
-        <option>Обувь</option>
-        <option>Аксессуары</option>
-      </select>
-      <select>
-        <option>Пуховики</option>
-        <option>Куртки</option>
-      </select>
-      <select>
-        <option>Для него</option>
-        <option>Для неё</option>
-        <option>Для всех</option>
-      </select>
-    </div>
+                <div class="create-product-row">
+                    <label>Категория:</label>
+                    <select>
+                        <option>Одежда</option>
+                        <option>Обувь</option>
+                        <option>Аксессуары</option>
+                    </select>
+                    <select>
+                        <option>Пуховики</option>
+                        <option>Куртки</option>
+                    </select>
+                    <select>
+                        <option>Для него</option>
+                        <option>Для неё</option>
+                        <option>Для всех</option>
+                    </select>
+                </div>
 
-    <div class="create-product-row">
-      <label>Сезон:</label>
-      <select>
-        <option>Зима</option>
-        <option>Весна</option>
-        <option>Лето</option>
-        <option>Осень</option>
-      </select>
-    </div>
+                <div class="create-product-row">
+                    <label>Сезон:</label>
+                    <select>
+                        <option>Зима</option>
+                        <option>Весна</option>
+                        <option>Лето</option>
+                        <option>Осень</option>
+                    </select>
+                </div>
 
-    <div class="create-product-row">
-      <label for="description">Описание:</label>
-      <textarea id="description" name="description" rows="2" class="create-product-input create-product-textarea" required></textarea>
-    </div>
+                <div class="create-product-row">
+                    <label for="description" class="description-label">Описание:</label>
+                    <textarea id="description" name="description" rows="2" class="create-product-input create-product-textarea" required></textarea>
+                </div>
 
-    <div class="create-product-row">
-      <label>Размеры:</label>
-       <select>
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-         <option>XL</option>
-         <option>39</option>
-         <option>40</option>
-      </select>
-    </div>
+                <div class="create-product-row">
+                    <label>Размеры:</label>
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>39</option>
+                        <option>40</option>
+                    </select>
+                </div>
 
-    <div class="create-product-row">
-      <label>Цвета:</label>
-      <select>
-        <option>Чёрный</option>
-        <option>Белый</option>
-      </select>
-    </div>
-
-    <div class="create-product-row">
-      <label>Изображения:</label>
-      <input type="file" accept="image/*">
-    </div>
-
-    <div class="create-product-row" id="image-upload-container">
-      <label for="image-upload-input" id="image-upload-label">Загрузить изображения</label>
-      <input type="file" id="image-upload-input" accept="image/*">
-      <img src="" alt="Uploaded Image" id="uploaded-image">
-    </div>
+                <div class="create-product-row">
+                    <label>Цвета:</label>
+                    <select>
+                        <option>Чёрный</option>
+                        <option>Белый</option>
+                    </select>
+                </div>
 
     <div class="create-product-row">
       <label for="price">Цена:</label>
@@ -104,8 +106,17 @@
         <option>€</option>
       </select>
     </div>
+    </div>
+      </div>
+    </div>
 
-    <button type="submit" class="create-product-button">Создать товар</button>
-  </div>
+    <div class="create-product-controls-footer">
+        <a id="create-product-btn" onclick="openCreateProductPage()"><i class="fa fa-chevron-left create-product-btn"></i></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a id="save-btn" onclick="onPageBtnClicked(this)"><i class="fa fa-floppy-o save-btn"></i></a>
+    </div>
+
 </body>
 </html>
